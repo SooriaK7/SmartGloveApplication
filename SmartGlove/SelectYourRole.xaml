@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGlove.SelectYourRole"
+             Shell.NavBarIsVisible="False"
+             Title="SelectYourRole">
+    <Grid>
+        <VerticalStackLayout>
+            <Frame BackgroundColor="{StaticResource Primary}" BorderColor="{StaticResource Primary}" CornerRadius="0">
+                <Grid RowDefinitions="Auto,*">
+                    <Image Source="Background.png" VerticalOptions="FillAndExpand" HeightRequest="250" WidthRequest="250"/>
+                    <Image Source="Working.png" VerticalOptions="FillAndExpand" HeightRequest="250" WidthRequest="250"/>
+                    <Label Grid.Row="1" FontSize="24" Margin="0,20,0,20" HorizontalOptions="Center" TextColor="{StaticResource White}">Select Your Role.</Label>
+                </Grid>
+            </Frame>
+            <Grid ColumnDefinitions="*, *" RowDefinitions="*,*" Margin="20,80,20,20">
+                <Label Grid.Column="0" FontSize="21" Grid.Row="1" Margin="10" TextColor="{StaticResource Primary}" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Center">Employee</Label>
+                <ImageButton Grid.Column="0" Source="employee.png" HeightRequest="100" WidthRequest="100"/>
+                <Label Grid.Column="1" FontSize="21" Grid.Row="1" Margin="10" TextColor="{StaticResource Primary}" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Center">Admin</Label>
+                <ImageButton Grid.Column="1" Source="admin.png" HeightRequest="100" WidthRequest="100"/>
+            </Grid>
+            <Image Grid.Row="2" Grid.RowSpan="2" Source="sglogo.png" HeightRequest="150" WidthRequest="200" VerticalOptions="End" Margin="0,40,0,0"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
